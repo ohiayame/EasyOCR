@@ -56,11 +56,11 @@ def evaluate_performance(image_paths, true_texts):
                         print(f"번호판 인식 결과가 없습니다. 실제: {true_text}")
 
     # 평균 문자 단위 정확도
-    avg_accuracy = total_accuracy / total_images
+    # avg_accuracy = total_accuracy / total_images
     # 번호판 단위 정확도
     full_plate_accuracy = total_full_matches / total_images
 
-    print(f"\n전체 문자 단위 평균 인식률: {avg_accuracy * 100:.2f}%")
+    # print(f"\n전체 문자 단위 평균 인식률: {avg_accuracy * 100:.2f}%")
     print(f"전체 번호판 단위 일치율: {full_plate_accuracy * 100:.2f}%")
 
 # 테스트용 이미지와 실제 번호판 텍스트
